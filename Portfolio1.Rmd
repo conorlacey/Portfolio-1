@@ -8,7 +8,38 @@ output: github_document
 In this portfolio I explore The Americans and Arts study. Which is "is a series of studies measuring participation in and attitudes about the arts and arts in education." The study took place during the years of 1973, 1975, 1980, 1984, 1987, and 1992. In general my goal is took look at various questions asked in this data set regarding attitudes towards the arts and how they've changed over time. 
 
 
-```{r }
+First let's load the data
+```{r load-data}
+
+#1973
+load("DS0001/35575-0001-Data.rda")
+D1973<-da35575.0001
+rm(da35575.0001)
+
+#1975
+load("DS0002/35575-0002-Data.rda")
+D1975<-da35575.0002
+rm(da35575.0002)
+
+#1980
+load("DS0003/35575-0003-Data.rda")
+D1980<-da35575.0003
+rm(da35575.0003)
+
+#1984
+load("DS0004/35575-0004-Data.rda")
+D1984<-da35575.0004
+rm(da35575.0004)
+
+#1987
+load("DS0005/35575-0005-Data.rda")
+D1987<-da35575.0005
+rm(da35575.0005)
+
+#1992
+load("DS0006/35575-0006-Data.rda")
+D1987<-da35575.0006
+rm(da35575.0006)
 
 ```
 
