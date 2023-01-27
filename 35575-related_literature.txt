@@ -1,0 +1,98 @@
+Bibliography
+Americans and the Arts [1973 - 1992]
+
+This bibliography includes published and unpublished works that are related 
+to ICPSR study 35575. It includes works that are based on primary
+or secondary analysis of the data, or which describe or critique those
+data or the collection methodology. 
+
+If you publish a work or know of other works that are based on these data,
+please send the complete citation and name of the ICPSR study used to:
+icpsr-biblio-notify@umich.edu 
+
+
+1. Center for Arts and Cultural Policy Studies, "How Supportive Are
+Americans of Arts Education in the Public Schools?." Updated 2004,.
+Full text: http://www.princeton.edu/culturalpolicy/quickfacts/policy/harris92.html
+
+2. Feld, Alan L.; O'Hare, Michael; Schuster, J. Mark, Patrons Despite
+Themselves: Taxpayers and Arts Policy. Philadelphia, PA: University of
+Pennsylvania Press, 1983.
+Full text: http://www.princeton.edu/culturalpolicy/quickfacts/policy/harris92.html
+
+3. Hendon, William S.; Costa, Frank; Rosenberg, Robert Allan, "The general
+public and the art museum: Case studies of visitors to several institutions
+identify characteristics of their publics." American Journal of Economics
+and Sociology. Apr 1989, 48, (2), 231 - 243. DOI: 10.1111/j.1536-
+7150.1989.tb02120.x
+Full text: http://www.princeton.edu/culturalpolicy/quickfacts/policy/harris92.html
+
+4. Hughes, Michael; Peterson, Richard A., "Isolating cultural choice
+patterns in the U.S. population." American Behavioral Scientist. Mar/Apr
+1983, 26, (4), 459 - 478.
+Full text: http://www.princeton.edu/culturalpolicy/quickfacts/policy/harris92.html
+
+5. Lena, C. Jennifer, Entitled: Discriminating Tastes and the Expansion of
+the Arts. Princeton University Press, 2019.
+Full text: muse.jhu.edu/book/66953
+
+6. National Research Center of the Arts, "Americans and the Arts: A Survey
+of Public Opinion." Washington, DC: Americans for the Arts (formerly
+Associated Councils for the Arts), Dec 31, 1974.
+Abstract: http://www.americansforthearts.org/by-program/reports-and-data/legislation-policy/naappd/americans-and-the-arts-a-survey-of-public-opinion
+
+7. Pettit, Becky, "Resources for studying public participation in and
+attitudes towards the arts." Poetics. Jun 2000, 27, (5-6), 351 - 395. DOI:
+10.1016/S0304-422X(00)00008-5
+Abstract: http://www.americansforthearts.org/by-program/reports-and-data/legislation-policy/naappd/americans-and-the-arts-a-survey-of-public-opinion
+
+8. Schuster, J. Mark Davidson, "Perspectives on the American Audience for
+Art Museums: A Research Monograph Based on the 1985 Survey of Public
+Participation in the Arts. Revised Edition." Feb 1988.
+Full text PDF: http://files.eric.ed.gov/fulltext/ED294780.pdf
+This monograph utilizes data from the 1985 Survey of Public Participation
+in the Arts (SPPA '85) to explore the audience composition of United States
+art museums and galleries. Part 1 focuses on: (1) demographic variables
+affecting U.S. adult attendance rates; (2) a comparison of the SPPA '85
+research data and the 1984 "Americans and the Arts" studies; and (3) a
+comparison of United States, Great Britain, France, Sweden, and Canada
+(Quebec) attendance patterns. Part 2 examines barriers to art museum or
+gallery attendance, while part 3 explores audience socialization factors
+that affect attendance. Part 4 presents an audience profile based on
+demographic characteristics and compares it to the general population's
+profile. An appendix describes an exploratory analysis of the relationship
+between participation rates and the number of art museums. Tables and
+graphs are included. (JHP)
+
+9. Schuster, J. Mark Davidson, "The Audience for American Art Museums."
+Research Division Report #23. Washington, DC: National Endowment for the
+Arts, Research Division, 1992.
+Full text PDF: http://arts.gov/sites/default/files/NEA-Research-Report-23.pdf
+This study uses data from the 1985 Survey of Public Participation in the
+Arts (SPPA) to explore the composition of the audience for art museums and
+art galleries in the United States. Organized into four parts, part 1
+reports that when asked if they had visited an art museum or art gallery in
+the 12 months preceding their 1985 SPPA interview, 22 percent of the adult
+population said that they had. The report goes on to present art museum
+participation rates across a variety of demographic variables--income,
+education, age, gender, race, geographic distribution, and occupation. This
+section also compares the 1985 SPPA participation rates with those of the
+Americans and the Arts Studies, and with participation rates from Great
+Britain, France, Sweden, and Quebec. A statistical model designed to
+predict the probability of attendance based on demographic factors also is
+developed in part 1, but this model's low predictive ability leads to the
+conclusion that other variables need to be examined. Part 2 of the report
+focuses on three SPPA socialization questions that are most likely to be
+linked to attendance at art museums: whether or not, and at what ages, the
+respondent had ever taken lessons in the visual arts; whether or not, and
+at what ages, the respondent had taken art appreciation classes; and
+whether or not, and the frequency with which, parents had taken the
+respondent to museums. An analysis of these questions reveals that all
+three of these factors show a strong relationship with increased
+attendance. Part 3 of the report examines unsatisfied demand and barriers
+to attendance. Part 4 presents a profile of the museum audience and
+examines how the demographic characteristics of the SPPA respondents are
+distributed among the museum audience and how this audience profile
+compares to the profile of the general population. An appendix that
+presents the mathematical results from the three logit analyses (a
+variation of regression analysis) that were conducted with ..

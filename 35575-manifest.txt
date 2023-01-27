@@ -1,0 +1,217 @@
+File Manifest for ICPSR 35575
+
+The National Research Center of the Arts. Americans and the Arts [1973 -
+1992]. ICPSR35575-v1. Ann Arbor, MI: Inter-university Consortium for
+Political and Social Research [distributor], 2015-03-19.
+http://doi.org/10.3886/ICPSR35575.v1
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    35575-descriptioncitation.pdf       -       -         -       2015-03-20  -
+
+    35575-related_literature.txt        -       -         -       daily       -
+
+    35575-manifest.txt                  -       -         -       daily       -
+
+
+DS0001 Americans and the Arts I [1973]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    35575-0001-Codebook.pdf             -       -         -       2015-03-19  fb13d05bb7949c8409b8e9af97dbef57
+
+    35575-0001-Data.dta                 -       3,005     784     2015-03-19  9fd667762bd978a8f79a35b43a9fa68c
+
+    35575-0001-Data.rda                 -       3,005     784     2015-03-19  0316f3acadd9b215ad6ea2fdc8ee21a7
+
+    35575-0001-Data.sav                 -       3,005     784     2015-03-19  5e9f26f0647c9386d0fa48e2903ff0ca
+
+    35575-0001-Data.stc                 -       3,005     784     2015-03-19  5fa4ad1b34aa19fdba25bdcb312ee818
+
+    35575-0001-Data.tsv                 -       3,005     784     2015-03-19  0aecdba01f08a78ab6c4f18ff4cea279
+
+    35575-0001-Data.txt                 802     3,005     784     2015-03-19  63ef90efdd1955bbea395a852b2c4754
+
+    35575-0001-Data.xlsx                -       3,005     784     2015-03-19  16d01de63d39bee444bff72ead3fd456
+
+    35575-0001-Questionnaire.pdf        -       -         -       2015-03-19  06576da555e26317f47adb5b63a38a3e
+
+    35575-0001-Setup.dct                -       -         -       2015-03-19  2121785b84ce56d5223ac88ed4eac7d2
+
+    35575-0001-Setup.do                 -       -         -       2015-03-19  3eab375db0618e49c098018bb4194ad7
+
+    35575-0001-Setup.sas                -       -         -       2015-03-19  828838339bb2e261b8b770a15937f882
+
+    35575-0001-Setup.sps                -       -         -       2015-03-19  4007bec93257b43890dcbacea37f88af
+
+
+DS0002 Americans and the Arts II [1975]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    35575-0002-Codebook.pdf             -       -         -       2015-03-19  63c86a555374c556d6e402af421155fd
+
+    35575-0002-Data.dta                 -       1,555     764     2015-03-19  ecd45dd9c62c25a0d707b7c26176e556
+
+    35575-0002-Data.rda                 -       1,555     764     2015-03-19  8ea53c812861ca9f77d15f5621a8ff34
+
+    35575-0002-Data.sav                 -       1,555     764     2015-03-19  af4875eb09e2f991526ca3137e64a8cf
+
+    35575-0002-Data.stc                 -       1,555     764     2015-03-19  cdbb58c158b8c4038e7913abc3eda4fe
+
+    35575-0002-Data.tsv                 -       1,555     764     2015-03-19  a0bd392cbeca92739872c631ccac15e8
+
+    35575-0002-Data.txt                 775     1,555     764     2015-03-19  3c644ca9d9bac4181c2ce0ec8e62aeab
+
+    35575-0002-Data.xlsx                -       1,555     764     2015-03-19  80d0aeb21a02605478400b516740bee5
+
+    35575-0002-Questionnaire.pdf        -       -         -       2015-03-19  a3b6e957d052609461490b94a2d04e47
+
+    35575-0002-Setup.dct                -       -         -       2015-03-19  a5e8e47dc7fc2302985c9d9241776ff0
+
+    35575-0002-Setup.do                 -       -         -       2015-03-19  89796d73d3ab04d279f02a0c84cb30ff
+
+    35575-0002-Setup.sas                -       -         -       2015-03-19  0ea0d325fc55980031aeb0fb35716b96
+
+    35575-0002-Setup.sps                -       -         -       2015-03-19  f2e4f06633d0685e089daed702618774
+
+    35575-0002-Supplemental_syntax.do   -       -         -       2015-03-19  8789dd58eb5ae75e592ae394c7987ef0
+
+    35575-0002-Supplemental_syntax.sas  -       -         -       2015-03-19  8b57bb349e9b460127572b55563120a9
+
+
+DS0003 Americans and the Arts III [1980]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    35575-0003-Codebook.pdf             -       -         -       2015-03-19  8361dc60ae6342810045f8c21a730fe8
+
+    35575-0003-Data.dta                 -       1,501     177     2015-03-19  f4f8c4b746759f774134061a703f08d9
+
+    35575-0003-Data.rda                 -       1,501     177     2015-03-19  d41b37598ba4a9ae011b97e5466445a7
+
+    35575-0003-Data.sav                 -       1,501     177     2015-03-19  f35f9f86dd409587f27f4b1107b10a65
+
+    35575-0003-Data.stc                 -       1,501     177     2015-03-19  4d26b400fdf94dc46b56a7aa39ed5f85
+
+    35575-0003-Data.tsv                 -       1,501     177     2015-03-19  85dc0c7e7c19d95fd2cf91ea98eb6c77
+
+    35575-0003-Data.txt                 184     1,501     177     2015-03-19  7a748e0e8a8fdf14e3b089187bcc83af
+
+    35575-0003-Data.xlsx                -       1,501     177     2015-03-19  408c7979ec4bd9f4e1beb0af8f86c8b3
+
+    35575-0003-Questionnaire.pdf        -       -         -       2015-03-19  10adb2384e385dd458bbf8daffc931be
+
+    35575-0003-Setup.dct                -       -         -       2015-03-19  5454f9b1d22bb59606ae439a82ec1eb3
+
+    35575-0003-Setup.do                 -       -         -       2015-03-19  6afa23585d1a4d0015aa413252f14092
+
+    35575-0003-Setup.sas                -       -         -       2015-03-19  8f4a51f0b3749c445b8cbdf352c9a1ba
+
+    35575-0003-Setup.sps                -       -         -       2015-03-19  0c322d3cd6ad5c1bfb3b893f3d287c2a
+
+
+DS0004 Americans and the Arts IV [1984]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    35575-0004-Codebook.pdf             -       -         -       2015-03-19  4b92346aca90db25142e392c818519ce
+
+    35575-0004-Data.dta                 -       1,504     176     2015-03-19  e531a82a93d0205727481432b18c22e3
+
+    35575-0004-Data.rda                 -       1,504     176     2015-03-19  2bfdc9aa85c3d555955cdee48d71bc7b
+
+    35575-0004-Data.sav                 -       1,504     176     2015-03-19  bddb699caa1f3f1a7bb557f2e2d6b022
+
+    35575-0004-Data.stc                 -       1,504     176     2015-03-19  7fbb7ae5030344bab505dd5759ccf305
+
+    35575-0004-Data.tsv                 -       1,504     176     2015-03-19  fde56a318d40afa84f32f64d355d5059
+
+    35575-0004-Data.txt                 183     1,504     176     2015-03-19  ff5eee900dcd182235619191a31242b7
+
+    35575-0004-Data.xlsx                -       1,504     176     2015-03-19  e7514043b05bb592f309e1ad47df6e1e
+
+    35575-0004-Questionnaire.pdf        -       -         -       2015-03-19  e64472350501ed233c2cf262f5fdca4b
+
+    35575-0004-Setup.dct                -       -         -       2015-03-19  46d9232d3af33004bdc7d08ba0b16e31
+
+    35575-0004-Setup.do                 -       -         -       2015-03-19  c669af793e81f3403a85a352982c5825
+
+    35575-0004-Setup.sas                -       -         -       2015-03-19  f050590684ac66670b9c99b65c290bc0
+
+    35575-0004-Setup.sps                -       -         -       2015-03-19  e4d82119672083762d4aad0348b5bbd4
+
+
+DS0005 Americans and the Arts V [1987]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    35575-0005-Codebook.pdf             -       -         -       2015-03-19  5fe00ad24579bd185ce410bf53cea197
+
+    35575-0005-Data.dta                 -       1,501     222     2015-03-19  8dca6cedee69461be2c9c318e03e58ed
+
+    35575-0005-Data.rda                 -       1,501     222     2015-03-19  9daf1bd806840e175d1cbd4beac001b7
+
+    35575-0005-Data.sav                 -       1,501     222     2015-03-19  bb484b00ddcacd607580f31cd1920a3b
+
+    35575-0005-Data.stc                 -       1,501     222     2015-03-19  15c8cc9279b3b7bc227b53f3513d1b78
+
+    35575-0005-Data.tsv                 -       1,501     222     2015-03-19  a4102c924b346bebe06f65ad4c58d661
+
+    35575-0005-Data.txt                 238     1,501     222     2015-03-19  83cdfb60e2dc7373bd85fa5a630e682b
+
+    35575-0005-Data.xlsx                -       1,501     222     2015-03-19  a16187b58250fe24341eaf654e316961
+
+    35575-0005-Questionnaire.pdf        -       -         -       2015-03-19  2ba108b938bd7637802e2752faeba82d
+
+    35575-0005-Report.pdf               -       -         -       2015-03-19  b76ed2ea96da1fbf64d7cc35c20e266d
+
+    35575-0005-Setup.dct                -       -         -       2015-03-19  3e51cf96726675ddf4141246312fb171
+
+    35575-0005-Setup.do                 -       -         -       2015-03-19  86025a2fb67cdc7f0b5850cad28dc712
+
+    35575-0005-Setup.sas                -       -         -       2015-03-19  d712c6a14056fb334264e6f489694852
+
+    35575-0005-Setup.sps                -       -         -       2015-03-19  0c70d5459774abd51456fa6fce059076
+
+
+DS0006 Americans and the Arts VI [1992]
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    35575-0006-Codebook.pdf             -       -         -       2015-03-19  c210f208861713c40babed93968199d5
+
+    35575-0006-Data.dta                 -       1,500     179     2015-03-19  2db021387f2a8f7506810aeb35a223be
+
+    35575-0006-Data.rda                 -       1,500     179     2015-03-19  53e0542752b84837561f319acc4e7c1d
+
+    35575-0006-Data.sav                 -       1,500     179     2015-03-19  31898191a388d1e7fff742e3005f5b81
+
+    35575-0006-Data.stc                 -       1,500     179     2015-03-19  73e3369883e712b48427eda7730c292d
+
+    35575-0006-Data.tsv                 -       1,500     179     2015-03-19  2697c5eb7e3c0df939527a8843995bea
+
+    35575-0006-Data.txt                 227     1,500     179     2015-03-19  94e9d6274a258cc57a07eb444faf421a
+
+    35575-0006-Data.xlsx                -       1,500     179     2015-03-19  8c0088bcc321a833f3c30d784f15aec2
+
+    35575-0006-Questionnaire.pdf        -       -         -       2015-03-19  818c8d03b0305903423ea553d7d779e5
+
+    35575-0006-Setup.dct                -       -         -       2015-03-19  9aa70ac80587b1e5d48d60322114d216
+
+    35575-0006-Setup.do                 -       -         -       2015-03-19  b9c2537387aee423b189cf4c33cc006d
+
+    35575-0006-Setup.sas                -       -         -       2015-03-19  c8cc3853794348a3bd532c941f203655
+
+    35575-0006-Setup.sps                -       -         -       2015-03-19  1ea709724959aefc4d4649099bf49dd2
+
