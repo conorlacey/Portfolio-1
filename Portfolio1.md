@@ -1,20 +1,31 @@
----
-title: "Portfolio1"
-author: "Conor Lacey"
-date: '2023-01-27'
-output: github_document
----
-```{r packages}
+Portfolio1
+================
+Conor Lacey
+2023-01-27
+
+``` r
 suppressWarnings(library(tidyverse))
 ```
 
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+    ## ✔ ggplot2 3.4.0     ✔ purrr   0.3.4
+    ## ✔ tibble  3.1.8     ✔ dplyr   1.0.8
+    ## ✔ tidyr   1.1.4     ✔ stringr 1.4.0
+    ## ✔ readr   2.1.3     ✔ forcats 0.5.1
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
 
-In this portfolio I explore The Americans and Arts study. Which is "a series of studies measuring participation in and attitudes about the arts and arts in education." The study took place during the years of 1973, 1975, 1980, 1984, 1987, and 1992. In general my goal is took look at various questions asked in this data set regarding attitudes towards the arts and how they've changed over time. 
+In this portfolio I explore The Americans and Arts study. Which is “a
+series of studies measuring participation in and attitudes about the
+arts and arts in education.” The study took place during the years of
+1973, 1975, 1980, 1984, 1987, and 1992. In general my goal is took look
+at various questions asked in this data set regarding attitudes towards
+the arts and how they’ve changed over time.
 
+First let’s load the data
 
-First let's load the data
-```{r load-data}
-
+``` r
 #1973
 load("DS0001/35575-0001-Data.rda")
 D1973<-da35575.0001
@@ -44,19 +55,28 @@ rm(da35575.0005)
 load("DS0006/35575-0006-Data.rda")
 D1992<-da35575.0006
 rm(da35575.0006)
-
 ```
 
-Alright so among all the data sets, they share one question in particular that I find interesting which is:
+Alright so among all the data sets, they share one question in
+particular that I find interesting which is:
 
-"Some people think that classes in the arts should be taught in public schools for children to learn and get credit for, just like math or science or English. Other people think that classes like those should be given, but only after school or as a non-credit activity; and still others don't think they should be given at all. In your opinion, should the public schools in this area teach courses in art appreciation for credit, should it be an after-school or non-credit course, or should it not be offered at all?"
+“Some people think that classes in the arts should be taught in public
+schools for children to learn and get credit for, just like math or
+science or English. Other people think that classes like those should be
+given, but only after school or as a non-credit activity; and still
+others don’t think they should be given at all. In your opinion, should
+the public schools in this area teach courses in art appreciation for
+credit, should it be an after-school or non-credit course, or should it
+not be offered at all?”
 
-So essentially I'm interestd in seeing how the answer to this question varies over time. 
+So essentially I’m interestd in seeing how the answer to this question
+varies over time.
 
-So now comes the tricky part. I have to merge these data sets...
+So now comes the tricky part. I have to merge these data sets…
 
-First let's reformat each data frame so it has the same structure
-```{r art_attitudes}
+First let’s reformat each data frame so it has the same structure
+
+``` r
 library(expss) %>% suppressWarnings() %>% suppressPackageStartupMessages()
 
 #1973
@@ -156,11 +176,4 @@ mutate(Art_Appreciation = as.numeric(Art_Appreciation)) %>%
                Year = "")
 
 detach("package:expss")
-
 ```
-PHEW! That's a lot of data. Now let's merge it all together by combining the rows
-
-```{r Art_Dat}
-
-```
-
