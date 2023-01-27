@@ -14,7 +14,6 @@ In this portfolio I explore The Americans and Arts study. Which is "a series of 
 
 First let's load the data
 ```{r load-data}
-
 #1973
 load("DS0001/35575-0001-Data.rda")
 D1973<-da35575.0001
@@ -44,19 +43,18 @@ rm(da35575.0005)
 load("DS0006/35575-0006-Data.rda")
 D1992<-da35575.0006
 rm(da35575.0006)
-
 ```
 
 Alright so among all the data sets, they share one question in particular that I find interesting which is:
 
 "Some people think that classes in the arts should be taught in public schools for children to learn and get credit for, just like math or science or English. Other people think that classes like those should be given, but only after school or as a non-credit activity; and still others don't think they should be given at all. In your opinion, should the public schools in this area teach courses in art appreciation for credit, should it be an after-school or non-credit course, or should it not be offered at all?"
 
-So essentially I'm interestd in seeing how the answer to this question varies over time. 
+So essentially I'm interested in seeing how the answer to this question varies over time. 
 
 So now comes the tricky part. I have to merge these data sets...
 
 First let's reformat each data frame so it has the same structure
-```{r art_attitudes}
+```{r reformatting-data-sets}
 library(expss) %>% suppressWarnings() %>% suppressPackageStartupMessages()
 
 #1973
@@ -156,11 +154,12 @@ mutate(Art_Appreciation = as.numeric(Art_Appreciation)) %>%
                Year = "")
 
 detach("package:expss")
-
 ```
 PHEW! That's a lot of data. Now let's merge it all together by combining the rows
 
-```{r Art_Dat}
+```{r bind-rows-art_attitudes}
+art_attitudes<-bind_rows(D1973,D1975,D1980,D1984,D1987,D1992)
 
+head(art_attitudes,10)
 ```
 

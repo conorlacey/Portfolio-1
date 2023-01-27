@@ -69,7 +69,7 @@ the public schools in this area teach courses in art appreciation for
 credit, should it be an after-school or non-credit course, or should it
 not be offered at all?”
 
-So essentially I’m interestd in seeing how the answer to this question
+So essentially I’m interested in seeing how the answer to this question
 varies over time.
 
 So now comes the tricky part. I have to merge these data sets…
@@ -177,3 +177,24 @@ mutate(Art_Appreciation = as.numeric(Art_Appreciation)) %>%
 
 detach("package:expss")
 ```
+
+PHEW! That’s a lot of data. Now let’s merge it all together by combining
+the rows
+
+``` r
+art_attitudes<-bind_rows(D1973,D1975,D1980,D1984,D1987,D1992)
+
+head(art_attitudes,10)
+```
+
+    ##    CASEID Art_Appreciation Year
+    ## 1       1                1 1973
+    ## 2       2               NA 1973
+    ## 3       3                1 1973
+    ## 4       4                1 1973
+    ## 5       5                1 1973
+    ## 6       6                2 1973
+    ## 7       7                1 1973
+    ## 8       8                4 1973
+    ## 9       9                2 1973
+    ## 10     10                1 1973
