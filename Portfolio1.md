@@ -16,6 +16,17 @@ suppressWarnings(library(tidyverse))
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
 
+``` r
+library(psych)
+```
+
+    ## 
+    ## Attaching package: 'psych'
+    ## 
+    ## The following objects are masked from 'package:ggplot2':
+    ## 
+    ##     %+%, alpha
+
 In this portfolio I explore The Americans and Arts study. Which is “a
 series of studies measuring participation in and attitudes about the
 arts and arts in education.” The study took place during the years of
@@ -163,7 +174,7 @@ D1987 <- D1987 %>%
 D1992 <- D1992 %>%  
   select(CASEID, Q13I_7) %>%
   rename("Art_Appreciation" = "Q13I_7") %>%
-  mutate(Year = 1987) %>% 
+  mutate(Year = 1992) %>% 
   mutate(Art_Appreciation = as.character(Art_Appreciation)) %>%
 mutate(Art_Appreciation = dplyr::recode(Art_Appreciation,
                                  "(1) Teach for credit" = "1",
@@ -222,7 +233,6 @@ They look fairly similar over time. I’m going to dive deeper and look at
 the means. However, I do not expect this to look very different.
 
 ``` r
-# Group by mean of multiple columns
 art_means<-art_attitudes %>% group_by(Year) %>% 
   summarise(mean_rating=mean(Art_Appreciation,na.rm = TRUE),
             .groups = 'drop') %>%
@@ -236,3 +246,30 @@ art_means %>% ggplot(aes(x=Year,
 ```
 
 ![](Portfolio1_files/figure-gfm/art_attitudes-means-1.png)<!-- -->
+Interesting. There is a decline, but I’m curious if this is actually
+significant in anyway, because the y-scale has clearly been modified to
+show the differences. Let’s run a simple t-test.
+
+However, before we do this we must notice that the sample sizes for each
+year are quite high. Over 1,000. So it’ll be pretty easy for even
+trivial differences to be significant. Let’s randomly sample 300 from
+1973 and 1992.
+
+``` r
+DS1973 <- sample(D1973$Art_Appreciation, 300)
+DS1992 <- sample(D1992$Art_Appreciation, 300)
+
+t.test(DS1992,DS1973,alternative = "less")
+```
+
+    ## 
+    ##  Welch Two Sample t-test
+    ## 
+    ## data:  DS1992 and DS1973
+    ## t = -3.0017, df = 500.79, p-value = 0.001409
+    ## alternative hypothesis: true difference in means is less than 0
+    ## 95 percent confidence interval:
+    ##         -Inf -0.08268588
+    ## sample estimates:
+    ## mean of x mean of y 
+    ##  1.316667  1.500000

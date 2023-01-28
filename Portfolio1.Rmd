@@ -144,7 +144,7 @@ D1992 <- D1992 %>%
   rename("Art_Appreciation" = "Q13I_7") %>%
   mutate(Year = 1992) %>% 
   mutate(Art_Appreciation = as.character(Art_Appreciation)) %>%
-mutate(Art_Appreciation = dpl3005/yr::recode(Art_Appreciation,
+mutate(Art_Appreciation = dplyr::recode(Art_Appreciation,
                                  "(1) Teach for credit" = "1",
                                  "(2) After school non-credit" = "2",
                                  "(3) Not at all" = "3",
