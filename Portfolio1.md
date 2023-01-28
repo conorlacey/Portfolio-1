@@ -1,4 +1,4 @@
-Portfolio1
+Portfolio1: Art Attitudes
 ================
 Conor Lacey
 2023-01-27
@@ -198,3 +198,41 @@ head(art_attitudes,10)
     ## 8       8                4 1973
     ## 9       9                2 1973
     ## 10     10                1 1973
+
+Yay!!! Now we have a working data set that data collected on this
+question from 1973 to 1992. Let’s explore it!
+
+First I want to see how the histogram compare
+
+``` r
+art_attitudes %>% ggplot(aes(x=Art_Appreciation))+
+  facet_wrap(~Year)+
+  geom_histogram(color="black")+
+  xlab("Art Appreciation Rating")+ 
+  ylab("Count")
+```
+
+    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+
+    ## Warning: Removed 36 rows containing non-finite values (`stat_bin()`).
+
+![](Portfolio1_files/figure-gfm/art_attitudes-histograms-1.png)<!-- -->
+
+They look fairly similar over time. I’m going to dive deeper and look at
+the means. However, I do not expect this to look very different.
+
+``` r
+# Group by mean of multiple columns
+art_means<-art_attitudes %>% group_by(Year) %>% 
+  summarise(mean_rating=mean(Art_Appreciation,na.rm = TRUE),
+            .groups = 'drop') %>%
+  as.data.frame()
+
+art_means %>% ggplot(aes(x=Year, 
+                         y=mean_rating))+
+  ylab("Average Rating")+
+  geom_point()+
+  geom_line()
+```
+
+![](Portfolio1_files/figure-gfm/art_attitudes-means-1.png)<!-- -->
