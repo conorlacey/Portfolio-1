@@ -273,6 +273,8 @@ with an overly large sample size. Perhaps I can achieve this for my next
 portfolio.
 
 Aside from this, the data is very interesting. There are tons of other
-variables I would like to explore this in data set, but the bulk of my
-time on this was taken up my merging the data sets. Either ways,
-portfolio has been very fun.
+variables I would like to explore in this data set. However, I would say
+this portfolio demonstrates more my ability to merge data sets for
+analysis as this was the majority of the time I spent on this project.
+This portfolio has been fun and I would like to continue exploring the
+art_attitudes data set I created in the future.
