@@ -159,13 +159,14 @@ PHEW! That's a lot of data. Now let's merge it all together by combining the row
 
 ```{r bind-rows-art_attitudes}
 art_attitudes<-bind_rows(D1973,D1975,D1980,D1984,D1987,D1992)
+art_attitudes<-art_attitudes %>% mutate(CASEID = 1:length(CASEID))
 
 head(art_attitudes,10)
 ```
 Yay!!! Now we have a working data set that data collected on this question from 
 1973 to 1992. Let's explore it! 
 
-First I want to see how the histogram compare 
+First I want to see how the histograms compare 
 ```{r art_attitudes-histograms}
 art_attitudes %>% ggplot(aes(x=Art_Appreciation))+
   facet_wrap(~Year)+
@@ -202,5 +203,5 @@ t.test(DS1973,D1992$Art_Appreciation, alternative = "greater")
 
 Well, it's very significant. However, I still do not trust these results considering the sample size for each was over 1,000. It's very easy for it be significant with a sample size greater than 1,000. Therefore, I think I will need to investigate better methods on how to analyze this with an overly large sample size. Perhaps I can achieve this for my next portfolio. 
 
-Aside from this, the data is very interesting. There are tons of other variables I would like to explore this in data set, but the bulk of my time on this was taken up my merging the data sets. Either ways, portfolio has been very fun. 
+Aside from this, the data is very interesting. There are tons of other variables I would like to explore in this data set. However, I would say this portfolio demonstrates more my ability to merge data sets for analysis as this was the majority of the time I spent on this project. This portfolio has been fun and I would like to continue exploring the art_attitudes data set I created in the future.
 

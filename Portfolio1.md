@@ -1,7 +1,7 @@
 Portfolio1: Art Attitudes
 ================
 Conor Lacey
-2023-01-27
+2023-01-29
 
 ``` r
 suppressWarnings(library(tidyverse))
@@ -183,6 +183,7 @@ the rows
 
 ``` r
 art_attitudes<-bind_rows(D1973,D1975,D1980,D1984,D1987,D1992)
+art_attitudes<-art_attitudes %>% mutate(CASEID = 1:length(CASEID))
 
 head(art_attitudes,10)
 ```
@@ -202,7 +203,7 @@ head(art_attitudes,10)
 Yay!!! Now we have a working data set that data collected on this
 question from 1973 to 1992. Let’s explore it!
 
-First I want to see how the histogram compare
+First I want to see how the histograms compare
 
 ``` r
 art_attitudes %>% ggplot(aes(x=Art_Appreciation))+
