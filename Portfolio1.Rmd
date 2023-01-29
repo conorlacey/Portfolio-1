@@ -1,12 +1,11 @@
 ---
 title: "Portfolio1: Art Attitudes"
 author: "Conor Lacey"
-date: '2023-01-27'
+date: '2023-01-29'
 output: github_document
 ---
 ```{r packages}
 suppressWarnings(library(tidyverse))
-library(psych)
 ```
 
 
@@ -189,14 +188,19 @@ art_means %>% ggplot(aes(x=Year,
   geom_point()+
   geom_line()
 ```
-Interesting. There is a decline, but I'm curious if this is actually significant in anyway, because the y-scale has clearly been modified to show the differences. Let's run a simple t-test.
 
-However, before we do this we must notice that the sample sizes for each year are quite high. Over 1,000. So it'll be pretty easy for even trivial differences to be significant. Let's randomly sample 300 from 1973 and 1992. 
+Interesting. There is a decline, but really this decline indicates an increase in ratings if you think about it. 1.5 gets close to 1 by becoming 1.3. However, I'm curious if this is actually significant in anyway, because the y-scale has clearly been modified to show the differences. Let's run a simple t-test between 1973 and 1992. I will also sample 1500 from 1973 since it's sample size is twice the size of 1992. I do this so the equal variances assumption is not violated.
+
 
 ```{r t-test}
-DS1973 <- sample(D1973$Art_Appreciation, 300)
-DS1992 <- sample(D1992$Art_Appreciation, 300)
+set.seed(8444)
 
-t.test(DS1992,DS1973,alternative = "less")
+DS1973<-sample(D1973$Art_Appreciation,1500)
+
+t.test(DS1973,D1992$Art_Appreciation, alternative = "greater")
 ```
+
+Well, it's very significant. However, I still do not trust these results considering the sample size for each was over 1,000. It's very easy for it be significant with a sample size greater than 1,000. Therefore, I think I will need to investigate better methods on how to analyze this with an overly large sample size. Perhaps I can achieve this for my next portfolio. 
+
+Aside from this, the data is very interesting. There are tons of other variables I would like to explore this in data set, but the bulk of my time on this was taken up my merging the data sets. Either ways, portfolio has been very fun. 
 

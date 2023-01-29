@@ -16,17 +16,6 @@ suppressWarnings(library(tidyverse))
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
 
-``` r
-library(psych)
-```
-
-    ## 
-    ## Attaching package: 'psych'
-    ## 
-    ## The following objects are masked from 'package:ggplot2':
-    ## 
-    ##     %+%, alpha
-
 In this portfolio I explore The Americans and Arts study. Which is “a
 series of studies measuring participation in and attitudes about the
 arts and arts in education.” The study took place during the years of
@@ -246,30 +235,43 @@ art_means %>% ggplot(aes(x=Year,
 ```
 
 ![](Portfolio1_files/figure-gfm/art_attitudes-means-1.png)<!-- -->
-Interesting. There is a decline, but I’m curious if this is actually
-significant in anyway, because the y-scale has clearly been modified to
-show the differences. Let’s run a simple t-test.
 
-However, before we do this we must notice that the sample sizes for each
-year are quite high. Over 1,000. So it’ll be pretty easy for even
-trivial differences to be significant. Let’s randomly sample 300 from
-1973 and 1992.
+Interesting. There is a decline, but really this decline indicates an
+increase in ratings if you think about it. 1.5 gets close to 1 by
+becoming 1.3. However, I’m curious if this is actually significant in
+anyway, because the y-scale has clearly been modified to show the
+differences. Let’s run a simple t-test between 1973 and 1992. I will
+also sample 1500 from 1973 since it’s sample size is twice the size of
+1992. I do this so the equal variances assumption is not violated.
 
 ``` r
-DS1973 <- sample(D1973$Art_Appreciation, 300)
-DS1992 <- sample(D1992$Art_Appreciation, 300)
+set.seed(8444)
 
-t.test(DS1992,DS1973,alternative = "less")
+DS1973<-sample(D1973$Art_Appreciation,1500)
+
+t.test(DS1973,D1992$Art_Appreciation, alternative = "greater")
 ```
 
     ## 
     ##  Welch Two Sample t-test
     ## 
-    ## data:  DS1992 and DS1973
-    ## t = -3.0017, df = 500.79, p-value = 0.001409
-    ## alternative hypothesis: true difference in means is less than 0
+    ## data:  DS1973 and D1992$Art_Appreciation
+    ## t = 6.111, df = 2574, p-value = 5.702e-10
+    ## alternative hypothesis: true difference in means is greater than 0
     ## 95 percent confidence interval:
-    ##         -Inf -0.08268588
+    ##  0.1269859       Inf
     ## sample estimates:
     ## mean of x mean of y 
-    ##  1.316667  1.500000
+    ##  1.518444  1.344667
+
+Well, it’s very significant. However, I still do not trust these results
+considering the sample size for each was over 1,000. It’s very easy for
+it be significant with a sample size greater than 1,000. Therefore, I
+think I will need to investigate better methods on how to analyze this
+with an overly large sample size. Perhaps I can achieve this for my next
+portfolio.
+
+Aside from this, the data is very interesting. There are tons of other
+variables I would like to explore this in data set, but the bulk of my
+time on this was taken up my merging the data sets. Either ways,
+portfolio has been very fun.
